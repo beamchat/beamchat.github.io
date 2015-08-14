@@ -348,7 +348,7 @@ paper-ripple,
     height: inherit !important;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1027px) {
     .♥ {
         font-size: 60px;
     }
@@ -367,6 +367,31 @@ paper-ripple,
     }
 }
 
+@media (max-width: 820px) {
+    .♥ {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 723px) {
+    .♥ {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 620px) {
+    .♥ {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 514px) {
+    .♥ {
+        font-size: 30px;
+        line-height: 60px;
+    }
+}
+
 @media (max-width: 550px) {
     .🐓 li,
     .🐓 a {
@@ -374,15 +399,16 @@ paper-ripple,
     }
 }
 
-@media (max-width: 370px) {
+/*@media (max-width: 370px) {
     .♥ {
         font-size: 40px;
         margin-bottom: 30px;
+        line-hei
     }
     .about {
         width: 90vw;
     }
-}
+}*/
 
 /*.bg-vid {
     position: fixed;
