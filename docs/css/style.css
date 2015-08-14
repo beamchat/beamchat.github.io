@@ -11,8 +11,8 @@ body {
 }
 
 .top {
-    background: -webkit-linear-gradient(rgba(20, 20, 20, .1), rgba(20, 20, 20, .1)), url(/bc/img/bg.jpg) no-repeat center center fixed;
-    background: linear-gradient(rgba(20, 20, 20, .1), rgba(20, 20, 20, .1)), url(/bc/img/bg.jpg) no-repeat center center fixed;
+    background: -webkit-linear-gradient(rgba(20, 20, 20, .1), rgba(20, 20, 20, .1)), url(/img/bg.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(20, 20, 20, .1), rgba(20, 20, 20, .1)), url(/img/bg.jpg) no-repeat center center fixed;
     background-size: cover;
     background-position: left bottom;
     overflow: hidden;
