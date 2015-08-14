@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Команды beamchat</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500&subset=latin,cyrillic" rel="stylesheet">
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.1/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Mono:400,300&subset=latin,cyrillic">
+</head>
+
+<body>
+
+    <body>
+        <div class="top" id="top">
+            <div class="mde">
+                <h1>Документация по командам beamchat.</h1></div>
+            <div class="mda">
+                <p>
+                    Каждая команда начинается на "/", многие из них имеют аргументы.
+                </p>
+            </div>
+        </div>
+        <div class="contain">
+            <br>
+            <br>
+            <h4>Вход в чат:</h4>
+            <a href="#join" id="join">
+                <div class="cmd-container first">
+                    <p>
+                        <span class="cmd">/join</span>Команда работает на <span class="link">@beamju</span> вместо <span class="link">@wowsebot</span>. Команда добавит вас в чат, если вы не в бане.
+                        <br>Не принимает каких-либо аргументов. Добавляет только того, кто ввёл команду.
+                    </p>
+                </div>
+            </a>
+            <h4>Команды для всех пользователей:</h4>
+            <p class="mb">Алиасы - псевдонимы команд которые можно использовать вместо основных.</p>
+            <a href="#notify" id="notify">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/notify цифратип текст</span>Команда выводит определенный текст через определенное время. Цифра - количество заданного типа. Тип - тип едениц - минуты/секунды/часы - m/s/h. Текст - текст, который будет отправлен. Пример команды: <span class="code">/notify 8m хуй</span>. Максимальное время: 8 часов.
+                    </p>
+                </div>
+            </a>
+            <a href="#encrypt" id="encrypt">
+                <div class="cmd-container first">
+                    <p>
+                        <span class="cmd">/encrypt текст</span>Зашифровывает текст по AES256 со случайным ключем от 1 до 26 символов и выводит зашифрованные данные и ключ.
+                    </p>
+                </div>
+            </a>
+            <a href="#encryptkey" id="encryptkey">
+                <div class="cmd-container first">
+                    <p>
+                        <span class="cmd">/encryptkey ключ текст</span>Зашифровывает текст по AES256 с ключем, заданным пользователем, и выводит зашифрованные данные и ключ.
+                    </p>
+                </div>
+            </a>
+            <a href="#decrypt" id="decrypt">
+                <div class="cmd-container first">
+                    <p>
+                        <span class="cmd">/decrypt ключ текст</span>Расшифровывает информацию по ключу и данным и выводит результат.
+                    </p>
+                </div>
+            </a>
+            <a href="#passgen" id="passgen">
+                <div class="cmd-container first">
+                    <p>
+                        <span class="cmd">/passgen длинна состав</span>Генерирует пароль заданной длинны, состоящий из определенных символов. Если не указывать состав то будут исползоваться символы a-z A-Z 0-9. Также текст в скобках из состава берется за часть. Т.е. 123(kek) будет добавлять kek вместе.
+                    </p>
+                </div>
+            </a>
+            <a href="#qr" id="qr">
+                <div class="cmd-container first">
+                    <p>
+                        <span class="cmd">/qr текст</span>Команда отправляет картинку с qr кодом содержащим текст, который пользователь отправил.
+                        <br>Также можно использовать reply на другом сообщении без указывания аргумента. Тогда возьмется текст сообщения на которое вы сделали reply.
+                        <br>Алиасы: <span class="code">/qrcode</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#tts" id="tts">
+                <div class="cmd-container first">
+                    <p>
+                        <span class="cmd">/tts текст</span>Команда выводит войс с текстом, который пользователь отправил.
+                        <br>Также можно использовать reply на другом сообщении без указывания аргумента. Тогда возьмется текст сообщения на которое вы сделали reply. Максимум 180 символов.
+                        <br> Алиасы: <span class="code">/voice</span>, <span class="code">/speech</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#bash" id="bash">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/bash номер</span>Команда выводит цитату с bash.im по номеру.
+                        <br>Если номер не указан то выводится случайная цитата.
+                    </p>
+                </div>
+            </a>
+            <a href="#now" id="now">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/now</span>Команда выводит текущие дату и время.
+                        <br>Алиасы: <span class="code">/time</span>, <span class="code">/date</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#unixtime" id="unixtime">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/unixtime</span>Команда выводит текущее время одним числом.
+                    </p>
+                </div>
+            </a>
+            <a href="#skypeip" id="skypeip">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/skypeip юзернейм</span>Команда выводит IP пользователя по имени пользователя скайпа. Пользователь должен быть онлайн.
+                    </p>
+                </div>
+            </a>
+            <a href="#roll" id="roll">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/roll</span>Выдает случайный стикер с числом
+                        <br>
+                        <span class="cmd">/roll число</span>Выдает случайное число до введенного
+                        <br>
+                        <span class="cmd">/roll число-число</span>Выдает случайное число между двумя числами
+                        <br>
+                        <span class="cmd">/roll числоdчисло</span>Выдает номер чисел (число до d) до второго числа (число после d)
+                        <br>Алиасы: <span class="code">/dice</span>, <span class="code">/random</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#rev" id="rev">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/rev текст</span>Выведет текст наоборот. Вместо текста можно использовать reply.
+                        <br>Алиасы: <span class="code">/reverse</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#chcase" id="chcase">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/chcase текст</span>Выведет текст в другой раскладке. Т.е. kjk переведет в лол, руддщ переведет в hello. Также работает на reply.
+                        <br>Алиасы: <span class="code">/changecase</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#hf" id="hf">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/hf текст</span>Выведет текст через huifikator.ru. Вместо текста можно использовать reply.
+                        <br>Алиасы: <span class="code">/huifikator</span>, <span class="code">/huyfikator</span>,
+                        <br><span class="code">/huificator</span>, <span class="code">/huyficator</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#hb" id="hb">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/hb текст</span>Загрузит текст на <span class="link">hastebin.com</span> и даст ссылку. Вместо текста можно использовать reply.
+                        <br>Алиасы: <span class="code">/haste</span>, <span class="code">/hastebin</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#googl" id="googl">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/googl ссылка</span>Сократит ссылку через <span class="link">goo.gl</span> и отправит короткий вариант.
+                    </p>
+                </div>
+            </a>
+            <a href="#bitly" id="bitly">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/bitly ссылка</span>Сократит ссылку через <span class="link">bit.ly</span> и отправит короткий вариант.
+                    </p>
+                </div>
+            </a>
+            <a href="#wm" id="wm">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd mt">/wm текст</span>Ваше сообщение будет перенаправлено <span class="link">@fedora</span>
+                        <br>Алиасы: <span class="code">/warnmemju</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#wiki" id="wiki">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/wiki текст</span>Найдет информацию по запросу и отошлет вам.
+                        <br>Алиасы: <span class="code">/wikipedia</span>, <span class="code">/pediwikia</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#tr" id="tr">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/tr текст</span>Определит язык и переведет текст на Русский.
+                        <br>
+                        <span class="cmd">/tr язык текст</span>Переведет текст с выбранного языка на Русский.
+                        <br>
+                        <span class="cmd">/tr язык1 язык2 текст</span>Переведет текст с языка 1 на язык 2.
+                        <br>Обозначение языка должно состоять из первых двух букв названия языка.
+                        <br>Например: японский будет ja, русский - ru.
+                        <br>Также принимает reply.
+                        <br>Алиасы: <span class="code">/translate</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#lol" id="lol">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/lol количество</span>Генерирует смех из символов азхАХ n раз и отправляет n раз (Максимум 5 для пользователей без привелегий)
+                        <br>
+                        <span class="cmd">/lol</span>Генерирует смех из символов азхАХ и отправляет 1 раз
+                        <br>
+                    </p>
+                </div>
+            </a>
+            <a href="#nyash" id="nyash">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/nyash</span>Берет случайную картинку из nya.sh
+                    </p>
+                </div>
+            </a>
+            <a href="#info" id="info">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/info</span>Отправляет информацию о вас
+                        <br>
+                        <span class="cmd">/inforeply</span>Отправляет информацию о пользователе на которого сделан reply
+                    </p>
+                </div>
+            </a>
+            <a href="#count" id="count">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/count</span>Шлет 3, 2, 1. Иногда удобно.
+                        <br> Алиасы: <span class="code">/timer</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#wscr" id="wscr">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/wscr ссылка</span>Отсылает документом скриншот веб страницы шириной 1000px
+                        <br> Алиасы: <span class="code">/webshot</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#html" id="html">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/html код</span>Отсылает документом скриншот выполненного html кода шириной 1000px
+                        <br> Алиасы: <span class="code">/hscr</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#js" id="js">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/js код</span>Выполняет javascript код с направлением результата в чят. Дан минимум команд, Таймаут: 5s. Вывод (<span class="code">console.log</span>) один на весь код.
+                        <br> Алиасы: <span class="code">/nodejs</span>, <span class="code">/javascript</span>, <span class="code">/node</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#img" id="img">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/img код</span>Ищет в google картинки и отправляет.
+                        <br> Алиасы: <span class="code">/image</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#g" id="g">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/g код</span>Ищет в google и отправляет несколько результатов.
+                        <br> Алиасы: <span class="code">/google</span>, <span class="code">/search</span>, <span class="code">/srch</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#q" id="q">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/q</span>Отправляет случайную цитату. С reply отсылает цитату пользователя на которого был сделан reply.
+                        <br>
+                        <span class="cmd">/q номер</span>Отправляет цитату по номеру.
+                        <br>
+                        <span class="cmd">/q номер+</span>Отправляет рандомную цитату из списка с айди больше номера.
+                        <br>
+                        <span class="cmd">/q текст</span>Выдает случайную цитату содержащую текст.
+                        <br>
+                        <span class="cmd">/stats</span>Выдает топ людей в цитатнике
+                        <br> Алиасы: <span class="code">/quote</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#leave" id="leave">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/leave</span>Кикает вас из конфы. Вы сможете вернуться по ссылке.
+                        <br>Алиасы: <span class="code">/cъебываю</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#banlist" id="banlist">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/banlist</span>Показывает список всех пользователей, которых забанили
+                        <br> Алиасы: <span class="code">/пидары</span>, <span class="code">/eblanlist</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#modlist" id="modlist">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/modlist</span>Показывает список всех модераторов
+                        <br> Алиасы: <span class="code">/moderlist</span>, <span class="code">/moderatorlist</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#about" id="about">
+                <div class="cmd-container last">
+                    <p>
+                        <span class="cmd">/about</span>Показывает описание beamchat
+                    </p>
+                </div>
+            </a>
+            <h4>Команды администраторов и модераторов:</h4>
+            <a href="#kick" id="kick">
+                <div class="cmd-container first">
+                    <p>
+                        <span class="cmd">/kick имя</span>Кикает пользователя по @username (@ не обязательно). Если его нет, то можно кикать по reply. Он сможет зайти.
+                        <br>Алиасы: <span class="code">/убери</span>, <span class="code">/кик</span>
+                        <br>
+                        <span class="cmd">/kickid</span>Кикает пользователя по ID. Он сможет зайти.
+                        <br>Алиасы: <span class="code">/убериайди</span>, <span class="code">/кикайди</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#ban" id="ban">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/ban имя</span>Забанит пользователя по @username (@ не обязательно), если оно есть. Иначе можно банить пользователя по reply. Он больше не зайдет.
+                        <br>Алиасы: <span class="code">/бань</span>, <span class="code">/бан</span>
+                        <br>
+                        <span class="cmd">/banid айди</span>Банит пользователя по ID. Он больше не зайдет.
+                        <br>Алиасы: <span class="code">/баньайди</span>, <span class="code">/банайди</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#unban" id="unban">
+                <div class="cmd-container last">
+                    <p>
+                        <span class="cmd">/unban имя</span>Разбанит пользователя по @username (@ не обязательно), если оно есть. Иначе можно разбанить пользователя по reply. Он теперь опять сможет заходить.
+                        <br>Алиасы: <span class="code">/разбань</span>, <span class="code">/разбан</span>
+                        <br>
+                        <span class="cmd">/unbanid</span>Разбанит пользователя по ID. Он теперь опять сможет заходить.
+                        <br>Алиасы: <span class="code">/разбаньайди</span>, <span class="code">/разбанайди</span>
+                        <br>
+                    </p>
+                </div>
+            </a>
+            <h4>Команды только администраторов:</h4>
+            <a href="#mod" id="mod">
+                <div class="cmd-container first">
+                    <p>
+                        <span class="cmd">/mod имя</span>Даст права модератора пользователю по @username (@ не обязательно). Если его нет, то по reply. Он сможет выполнять команды выше.
+                        <br>
+                        <span class="cmd">/modid</span>Даст права модератора пользователю по ID. Он сможет выполнять команды выше.
+                    </p>
+                </div>
+            </a>
+            <a href="#unmod" id="unmod">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/unmod</span>Уберёт права модератора у пользователя по reply. Он не сможет выполнять команды выше.
+                        <br>
+                        <span class="cmd">/unmodid</span>Уберёт права модератора у пользователя по ID. Он не сможет выполнять команды выше.
+                    </p>
+                </div>
+            </a>
+            <a href="#warn" id="warn">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/warn текст</span>Отошлет текст трижды в beamchat.
+                    </p>
+                </div>
+            </a>
+            <a href="#bc" id="bc">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd mt">/bc текст</span>Отошлет текст в beamchat. Можно отсылать как <span class="link">@wowsebot</span> так и <span class="link">@beamju</span> (и в лс).
+                    </p>
+                </div>
+            </a>
+            <a href="#scr" id="scr">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/scr</span>Отправляет скриншот компьютера администратора.
+                    </p>
+                </div>
+            </a>
+            <a href="#manage" id="manage">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/save</span>Сохранить цитату по reply
+                        <br>
+                        <span class="cmd">/remove номер</span>Удалить цитату по номеру.
+                    </p>
+                </div>
+            </a>
+            <a href="#kb" id="kb">
+                <div class="cmd-container last">
+                    <p>
+                        <span class="cmd">/kb массивы</span>Показывает клавиатуру по массивам
+                        <br>
+                        <span class="cmd">/kbsm массивы</span>Показывает маленькую клавиатуру по массивам
+                        <br>
+                        <span class="cmd">/hidekb</span>Убирает клавиатуру
+                    </p>
+                </div>
+            </a>
+            <a href="#stop" id="stop">
+                <div class="cmd-container last">
+                    <p>
+                        <span class="cmd">/stop</span>Завершает процесс бота. Его можно запустить только через компьютер, на котором запущен бот.
+                    </p>
+                </div>
+            </a>
+            <a href="#off" id="off">
+                <div class="cmd-container last">
+                    <p>
+                        <span class="cmd">/off</span>Включает игнорирование всех команд кроме /on.
+                    </p>
+                </div>
+            </a>
+            <a href="#on" id="on">
+                <div class="cmd-container last">
+                    <p>
+                        <span class="cmd">/on</span>Выключает игнорирование всех команд если оно включено (через /off).
+                    </p>
+                </div>
+            </a>
+        </div>
+        <a href="#top">
+            <div class="totop hif"><i class="zmdi zmdi-format-valign-top"></i></div>
+        </a>
+    </body>
+
+</html>
