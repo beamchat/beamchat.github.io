@@ -39,6 +39,13 @@
             </a>
             <h4>Команды для всех пользователей:</h4>
             <p class="mb">Алиасы - псевдонимы команд которые можно использовать вместо основных.</p>
+            <a href="#color" id="color">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/color кодцвета</span>Код цвета это значение цвета, которое поддерживает html. Например hex и rgb. Отправляет вам картинку с цветом и оттенками
+                    </p>
+                </div>
+            </a>
             <a href="#notify" id="notify">
                 <div class="cmd-container">
                     <p>
@@ -115,6 +122,34 @@
                     </p>
                 </div>
             </a>
+            <a href="#latex" id="latex">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/latex код</span>Отправляет картинки со сгенерированным latex кодом<br>Алиасы: <span class="code">/tex</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#weather" id="weather">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/weather место</span>Отправляет температуру, данные по облачности и скорость и направление ветра в месте. Местом может быть город или zip-код.
+                    </p>
+                </div>
+            </a>
+            <a href="#fortune" id="fortune">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/fortune</span>Отправляет вывод программы fortune.
+                    </p>
+                </div>
+            </a>
+            <a href="#anime" id="anime">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/anime название</span>Ищет и отправляет информация о аниме.</span>
+                    </p>
+                </div>
+            </a>
             <a href="#skypeip" id="skypeip">
                 <div class="cmd-container">
                     <p>
@@ -166,6 +201,57 @@
                     <p>
                         <span class="cmd">/hb текст</span>Загрузит текст на <span class="link">hastebin.com</span> и даст ссылку. Вместо текста можно использовать reply.
                         <br>Алиасы: <span class="code">/haste</span>, <span class="code">/hastebin</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#upper" id="upper">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/upper текст</span>Отправляет текст КАПСОМ<br>Алиасы: <span class="code">/uppercase</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#invert" id="invert">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/invert текст</span>Отправляет текст, где все буквы написаны обратным размером.<br>Алиасы: <span class="code">/invertcase</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#lower" id="lower">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/lower текст</span>Отправляет текст маленькими буквами<br>Алиасы: <span class="code">/lowercase</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#capitalize" id="capitalize">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/capitalize текст</span>Отправляет текст Где Каждое Слово Написано С Больной Буквы
+                    </p>
+                </div>
+            </a>
+            <a href="#tolisp" id="tolisp">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/tolisp текст</span>Отправляет текст, (который (выглядит (как (псевдокод (языка (программирования (lisp)))))))
+                    </p>
+                </div>
+            </a>
+            <a href="#htr" id="htr">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/htr #КОД</span>Конвертирует hex цвет в rgb цвет. Поддерживается как короткий, так и длинный вариант.<br>
+                        Алиасы: <span class="code">/hextorgb</span>, <span class="code">/hex2rgb</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#rth" id="rth">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/rth rgb(красный,зеленый,синий)</span>Конвертирует rgb цвет в hex цвет.<br>
+                        Алиасы: <span class="code">/rgbtohex</span>, <span class="code">/rgb2hex</span>
                     </p>
                 </div>
             </a>
@@ -259,6 +345,14 @@
                     <p>
                         <span class="cmd">/html код</span>Отсылает документом скриншот выполненного html кода шириной 1000px
                         <br> Алиасы: <span class="code">/hscr</span>
+                    </p>
+                </div>
+            </a>
+            <a href="#md" id="md">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/md код</span>Компилирует markdown код, отправляет html код и картинку html кода.
+                        <br> Алиасы: <span class="code">/markdown</span>
                     </p>
                 </div>
             </a>
@@ -446,6 +540,20 @@
                 <div class="cmd-container last">
                     <p>
                         <span class="cmd">/on</span>Выключает игнорирование всех команд если оно включено (через /off).
+                    </p>
+                </div>
+            </a>
+            <a href="#shell" id="shell">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/shell код</span>Исполняет bash код.
+                    </p>
+                </div>
+            </a>
+            <a href="#clear" id="clear">
+                <div class="cmd-container">
+                    <p>
+                        <span class="cmd">/clear</span>Заполняет чат большим количеством невидимых сообщений.
                     </p>
                 </div>
             </a>
