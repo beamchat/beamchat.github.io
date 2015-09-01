@@ -31,8 +31,8 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: -webkit-linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/bg.jpg) no-repeat center center fixed;
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/bg.jpg) no-repeat center center fixed;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bg.jpg) no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bg.jpg) no-repeat center center fixed;
     background-size: cover;
     overflow: hidden;
     height: 100vh !important;
