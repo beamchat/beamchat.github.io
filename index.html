@@ -1,63 +1,209 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>beamchat.</title>
-    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <title>beamchat</title>
+    <link rel="stylesheet" href="st.css">
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto+Mono:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.2.65/css/materialdesignicons.min.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="import" href="//www.polymer-project.org/0.5/components/paper-ripple/paper-ripple.html">
-    <!--stylesheets-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,100,300,700&subset=latin,cyrillic">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,cyrillic">
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 
-<body class="hidden-fade2">
-    <noscript>
-        <style>
-        body {
-            overflow: auto !important
-        }
-        
-        .hidden,
-        .hidden-fade,
-        .hidden-fade2 {
-            display: block;
-            opacity: 1;
-            transform: none !important;
-            position: static;
-        }
-        
-        * {
-            height: initial !important;
-            margin: 10px;
-            position: static;
-            transform: none !important;
-            top: initial;
-        }
-        </style>
-    </noscript>
-    <div class="vid-ol"></div>
-    <div class="🐛">
-        <h1 class="♥">закрыто</h1>
-        <!-- <p class="about">Конференция в телеграме со свободой выбора тем для общения и защитой от людей, которые могут разрушить конфу. В нашей конференции любят новичков, нет бана по личным причинам и глупых правил. Для входа в чат напишите сообщение «/join» на аккаунт @beamju.</p>
-        <ul class="🐓">
-            <a href="https://telegram.org">скачать телеграм
-                    <paper-ripple fit></paper-ripple>
-            </a>
-            <a href="https://telegram.me/joinchat/02bba349025f5d487d410584fbc0ae57">вступить
-                    <paper-ripple fit></paper-ripple>
-            </a>
-            <a href="http://telegram.org">скачать телеграм
-                    <paper-ripple fit=""></paper-ripple>
-            </a>
-            <a href="http://telegram.me/beamju">войти
-                    <paper-ripple fit=""></paper-ripple>
-            </a>
-        </ul> -->
+<body>
+    <div class="top">
+        <div class="val">
+            <div class="title">
+                beamchat
+            </div>
+            <div class="subtitle">
+                телеграм конференция
+            </div>
+        </div>
+        <div class="stupid">
+            листай вниз
+        </div>
     </div>
-    <script src="js/index.js"></script>
+    <div class="desct">
+        <div class="val">
+            <div class="desc-title">
+                Что такое?
+            </div>
+            <div class="desc-text">
+                Конференция в телеграме где тебе будут рады. У нас свобода выбора тем для общения и защита от людей, которые могут разрушить конфу. В нашей конференции любят новичков, нет бана по личным причинам и глупых правил.
+            </div>
+        </div>
+    </div>
+    <div class="che">
+        <div class="valtgl">
+            <div class="che-title">
+                Что есть?
+            </div>
+            <div class="che-tab">
+                <div class="che1">
+                    <div class="chic"><i class="mdi mdi-lock-outline"></i></div>
+                    <div class="ttl">надежность</div>
+                    <div class="desc">Мы защищены от нападений наших неприятелей чуть более чем полностью.</div>
+                </div>
+                <div class="che2">
+                    <div class="chic"><i class="mdi mdi-coffee-to-go"></i></div>
+                    <div class="ttl">удобство</div>
+                    <div class="desc">Есть бот, который помагает быстро выполнять различные задачи быстро.</div>
+                </div>
+                <div class="che2">
+                    <div class="chic"><i class="mdi mdi-lightbulb-outline"></i></div>
+                    <div class="ttl">ламповость</div>
+                    <div class="desc">Приятный состав с которым можно поговорить на любые темы.</div>
+                </div>
+                <div class="che2">
+                    <div class="chic"><i class="mdi mdi-comment-text-outline"></i></div>
+                    <div class="ttl">свобода</div>
+                    <div class="desc">Свобода слова для всех. Но это не означает отсутствие правил.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rulez">
+        <div class="rule-ttl">Что запрещено?</div>
+        <div class="rule-lst">
+            <div class="al">
+                <div class="card ct">
+                    <div class="bdesc">Нападения на конференцию с целью захвата и блокировки возможности нормального общения.</div>
+                    <div class="punish">бан</div>
+                </div>
+                <div class="card">
+                    <div class="bdesc">Пребывание тут или добавление сюда людей, национальность которых — узбеки, дагестанцы, арабы и т.п.</div>
+                    <div class="punish">бан</div>
+                </div>
+                <div class="card">
+                    <div class="bdesc">Мошенничество, т.е. обман людей с целью получения прибыли от жертвы.</div>
+                    <div class="punish">бан</div>
+                </div>
+                <div class="card">
+                    <div class="bdesc">Добавление ботов, кроме @wowsebot</div>
+                    <div class="punishy">кик</div>
+                </div>
+                <div class="card">
+                    <div class="bdesc">Добавление большого количества пользователей в чят одновременно или близко друг к другу по времени.</div>
+                    <div class="punish">бан</div>
+                </div>
+                <div class="card cb">
+                    <div class="bdesc">Пиар/спам, навязывание человеку какой-либо продукции</div>
+                    <div class="punishy">кик</div>
+                </div>
+            </div>
+        </div>
+        <div class="rule-sub">Кик - удаление из конференции при котором пользователь может вернуться.
+            <br>Бан - удаление из конференции при котором нельзя вернуться.
+            <br>После многократных киков наступает бан.</div>
+    </div>
+    <div class="join">
+        <div class="val">
+            <div class="join-title">
+                Как попасть?
+            </div>
+            <div class="join-how">
+                Все крайне просто. Напишите <span class="mono">/join</span> на аккаунт <span class="mono">@beamchat</span>
+            </div>
+            <a href="http://telegram.me/beamchat">
+                <div class="join-btn">написать</div>
+            </a>
+        </div>
+    </div>
+    <div class="cmds">
+        <div class="cmds-title">
+            Что может бот?
+        </div>
+        <div class="cmd-sub">Много что. Разберем на примерах:</div>
+        <div class="cmd-lst">
+            <div class="code">
+                /notify 8m купи хуй
+            </div>
+            <p>
+                Через восемь минут напомнит купить хуй.
+            </p>
+            <div class="code">
+                /js a = "хуйло"; console.log(a)
+            </div>
+            <p>
+                Выполнит javascript код с транслированием в чат. Напишет в чат «хуйло»
+            </p>
+            <div class="code">
+                /img флаг украины
+            </div>
+            <p>
+                Отправит картинку с флагом украины. Использует google.
+            </p>
+            <div class="code">
+                /mail user@example.com; анус; купи анус!!!
+            </div>
+            <p>
+                Отправит электронное сообщение пользователю user@example.com с темой «анус» и текстом «купи анус!!!»
+            </p>
+            <div class="code">
+                /q 3
+            </div>
+            <p>
+                Отправит третью цитату из цитатника, который пополняется администрацией.
+            </p>
+            <div class="code">
+                /g купить гараж
+            </div>
+            <p>
+                Отправит топ 5 ссылок по запросу «купить гараж» в google
+            </p>
+            <p>
+                Отправит третью цитату из цитатника. Цитатник пополняется администрацией.
+            </p>
+            <div class="code">
+                /tr ru uk вагинальные клещи
+            </div>
+            <p>
+                Отправит перевод фразы вагинальные клещи с русского на украинский.
+            </p>
+            <div class="code">
+                /voice text
+            </div>
+            <p>
+                Отправит звуковое сообщение.
+            </p>
+            <div class="code">
+                /chcase vfnm t,fk
+            </div>
+            <p>
+                Отправит текст в противополжной раскладке (аля punto switcher)
+            </p>
+            <div class="code">
+                /roll
+            </div>
+            <p>
+                Отправит случайное число
+            </p>
+            <div class="code">
+                /html &lt;h1&gt;123&lt;/h1&gt;
+            </div>
+            <p>
+                Отправит картинку с html кодом.
+            </p>
+            <div class="code">
+                /wscr google.pl
+            </div>
+            <p>
+                Отправит скриншот веб-страницы google.pl
+            </p>
+        </div>
+        <p class="cmd-sub">Список выше далеко не полный. Отправить запрос на добавление новой команды можно написав в чат.</p>
+    </div>
+    <div class="copy">
+        <div class="val">
+            <p>
+                Сделано wowse в 2015. MIT.
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>
